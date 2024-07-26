@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'banner-pic': "url('/src/assets/Images/sohel_rana.jpg')"
+      }
+    },
   },
   plugins: [
     require('daisyui'),
