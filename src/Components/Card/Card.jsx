@@ -1,27 +1,33 @@
+import PropTypes from 'prop-types';
 
-
-const Card = ({data}) => {
-  const{title, short_description, features, problem_solve} = data;
+const Card = ({ data, count }) => {
+  const { title, short_description } = data;
+  console.log(count);
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          {title}
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
-        <p>{short_description}</p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+    <>
+        <div className="hero bg-base-200 min-h-screen">
+          <div className={`hero-content flex-col lg:${count % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              className="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <h1 className="text-5xl font-bold">Box Office News!</h1>
+              <p className="py-6">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button className="btn btn-primary">Get Started</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+
+    </>
   );
 };
+
+Card.propTypes = {
+  data: PropTypes.object.isRequired,
+  count: PropTypes.number
+}
 
 export default Card;

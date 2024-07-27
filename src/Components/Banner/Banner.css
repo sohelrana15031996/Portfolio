@@ -1,22 +1,13 @@
-/* Add this CSS to your stylesheet */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  50% { border-color: transparent }
-}
-
-.typewriter h2, .typewriter p {
-  overflow: hidden;
-  
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: typing 3s steps(30, end), blink .75s step-end infinite;
-}
-
-/* .hidden {
-  display: none;
+/* .typed-input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: black !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  text-align: center !important;
+  width: auto !important;
+  display: inline !important;
+  opacity: 1 !important;
 } */

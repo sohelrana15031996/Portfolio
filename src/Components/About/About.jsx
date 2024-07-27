@@ -24,7 +24,7 @@ const About = () => {
       {/* About me text section */}
       <div className="w-1/2">
         <h4 className="my-3 lg:my-6 font-bold text-3xl">About Me</h4>
-        <p className="text-justify text-xl text-slate-600">{`I am a master's graduate in Robotics from the University of Sussex, Brighton. I developed a fascination for coding after taking a Programming for Engineers course. This newfound passion led me to explore web development, where I fell in love with creating dynamic and user-friendly web interfaces. Currently, I am seeking opportunities in front-end development, combining my technical expertise with creative problem-solving skills.`}</p>
+        <p className="text-justify text-xl text-slate-600">{`I am a master's graduate in Robotics from the University of Sussex. I developed a fascination for coding after taking a Programming for Engineers course. This newfound passion led me to explore web development, where I fell in love with creating dynamic and user-friendly web interfaces. Currently, I am seeking opportunities in front-end development, combining my technical expertise with creative problem-solving skills.`}</p>
         <p className="text-justify text-xl text-slate-600 my-4">
           Outside my professional pursuits, I enjoy playing badminton and cricket, traveling to new destinations, and watching movies.
         </p>
